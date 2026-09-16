@@ -14,7 +14,7 @@ def register():
 @app.route('/success', methods=['POST']) 
 def success(): 
     name = request.form['name'] 
-    year = request.form['year'] 
-    return render_template('success.html', name=name, year=year) 
+    email = request.form['email'] 
+    return render_template('success.html', name=name, email=email) 
 if __name__ == '__main__':
     app.run(debug=True)
